@@ -5,6 +5,8 @@
   text-align: center;
   line-height: 1.5;
   background-image: url(https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-5120x2880-1432.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .workArea{
@@ -48,6 +50,7 @@
 
 #addButton {
   padding: 10px;
+  margin-left: 10px;
   background-color: radian;
   border-radius: 14px;
   border-style: none;
@@ -64,8 +67,39 @@
 #addButton:active {
   box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
   transform: scale(.98);
-  /* background-color: brown; */
 }
 #addButton:focus {
   outline: none;
+}
+
+
+/* LIST ITEMS STYLE */
+#list {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.listItem {
+  margin-top: 15px;
+  background-color: rgba(100, 100, 100, 60%);
+  border-radius: 14px;
+  width: 60%;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteButton {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: radian;
+  border-radius: 14px;
+  border-style: none;
+  background-color: rgba(100, 100, 100, 60%);
+  color: #fff;
+  cursor: pointer;
 }

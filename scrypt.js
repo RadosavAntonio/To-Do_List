@@ -1,7 +1,8 @@
 let addItem = () => {
   const newItem = document.createElement("div");
-    newItem.className = "itemButtons";
+    newItem.className = "listItem"
   const deleteButton = document.createElement("button");
+    deleteButton.className = "deleteButton";
   const editButton = document.createElement("button");
    
   newItem.innerHTML = document.getElementById("insert").value;
@@ -9,10 +10,10 @@ let addItem = () => {
   deleteButton.innerHTML = "delete";
   editButton.innerHTML = "edit"
 
-  document.getElementById("list").appendChild(newItem);
+  document.getElementById("list").appendChild(newItem).appendChild(deleteButton);
 };
 
-let removeItem = () => {
+function removeItem() {
   document.getElementById("list").removeChild(this);
 };
 
